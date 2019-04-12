@@ -2,6 +2,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Driver class.
+ *
+ * Class implements methods in Frame class and handles the the playing of the bowling game (sort of)
+ * @author Tim Ortin, Tyler Kelly
+ *
+ * @version 1
+ *
+ *
+ */
 public class Game {
     public static void main(String[] args) {
 
@@ -25,7 +35,10 @@ public class Game {
             if (frame.isStrike()){
                 System.out.println("Strike");
                 frame.setScore(strike);
-                frames.get(frameTotal - 2).
+                if (frameTotal > 1){
+                   // frames.get(frameTotal - 2)
+                }
+
             }else{
                 System.out.println("Enter second roll");
                 roll2 = in.nextInt();
